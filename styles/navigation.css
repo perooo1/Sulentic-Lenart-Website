@@ -1,0 +1,131 @@
+.zone-navigation{
+    display: flex;
+    justify-content: center;
+}
+
+.navbar-light{
+    background-color: white;
+    box-shadow: 4px 4px 4px #888888;
+}
+
+#logo_navigation{
+    padding: 0.7rem;
+    max-width: 30%;
+    height: auto;
+}
+
+#logo_navigation > img{
+    max-width: 100%;
+    height: auto;
+}
+
+.logo_navigation2{
+    display: none;
+    width: 30%;
+    height: 30%;
+}
+
+.main-nav{
+    display: flex;
+    font-size: 1.5em;
+    list-style: none;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+}
+
+li{
+    padding-left: 0;
+    padding-right: 50px;
+}
+
+a{
+    color: #0000fe;
+    text-decoration: none;
+}
+
+@media only screen and (max-width: 770px){      /*ZA TABLETE NPR iPAD - 770PX*/
+    .zone-navigation{
+        font-size: 0.8em;
+        padding: 0;
+    }
+
+    #logo_navigation{
+       display: none;
+    }
+        
+    .logo_navigation2{
+        display:contents;
+        margin: 3rem;
+        padding: 0;
+        max-width: 100%;
+        height: auto;
+    }
+
+    .logo_navigation2 > img{
+        margin-left: 2em;
+        max-width: 100px;
+        height: auto;
+    }
+}
+
+@media only screen and (max-width: 500px){      /*za malo veće ekrane od cca 4.6" - 500PX*/
+    .zone-navigation{
+        font-size: 0.6em;
+        padding: 0;
+    }
+
+    #logo_navigation{
+       display: none;
+    }
+        
+    .logo_navigation2{
+        display:contents;
+        margin: 3rem;
+        padding: 0;
+        max-width: 100%;
+        height: auto;
+    }
+
+    .logo_navigation2 > img{
+        margin-left: 2em;
+        max-width: 100px;
+        height: auto;
+    }
+
+    li{
+        padding-left: 0;
+        padding-right: 10px;
+    }
+}
+
+@media only screen and (max-width: 416px){  /*za VRLO male ekrane - mobiteli npr iPhone6 - 416PX*/
+    .zone-navigation{
+        font-size: 0.5em;
+        padding: 0;
+        font-weight: bold;
+    }
+
+    #logo_navigation{
+       display: none;
+    }
+        
+    .logo_navigation2{
+        display:contents;
+        margin: 3rem;
+        padding: 0;
+        max-width: 100%;
+        height: auto;
+    }
+
+    .logo_navigation2 > img{
+        margin-left: 2em;
+        max-width: 100px;
+        height: auto;
+    }
+
+    li{
+        padding-left: 0;
+        padding-right: 10px;
+    }
+}

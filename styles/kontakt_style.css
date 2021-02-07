@@ -1,0 +1,103 @@
+body{
+    margin: auto 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/*MAIN*/
+
+.grid-wrapper{
+    padding-top: 150px;
+    display: grid;
+    gap: 20px;
+    grid-template-areas: 
+    "osoba1 osoba2"
+    "lokacija googlemaps";
+
+    grid-template-columns: repeat(2,1fr);
+    grid-auto-rows: minmax(100px, auto);
+
+    background: rgba(0,0,0,0.1);
+    background-image: url('../images/pozadinambytr10.png');
+    justify-items:center;
+    align-items: center; 
+}
+
+@media only screen and (max-width: 770px){
+    .grid-wrapper{
+        grid-template-areas: 
+        "osoba1"
+        "osoba2"
+        "lokacija" 
+        "googlemaps";
+
+        grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    }
+}
+
+.box{
+    padding: 10px;
+    margin: 0;
+    font-size: 1em;
+}
+
+.osoba1{
+    grid-area: osoba1;
+    margin-top: 4em;
+}
+
+.osoba2{
+    grid-area: osoba2;
+    margin-top: 4em;;
+}
+
+.lokacija{
+    grid-area: lokacija;
+    font-size: 1.8em;
+    text-align: center;
+}
+
+.adresa{
+    font-size: 1.6em;
+}
+
+.radno-vrijeme{
+    text-align: center;
+    font-size: 1.6em;
+}
+
+.kontakt > li{
+   margin: 20px;
+}
+
+.box > img{
+    margin: 15px;
+    padding-left: 200px;
+}
+
+.googlemaps{
+    grid-area: googlemaps;
+    border: 3px solid black;
+}
+
+.ime{
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 1.6em;
+}
+
+.telefon{
+    text-transform: uppercase;
+    list-style-image: url(../images/phone-call.png);
+    font-size: 1.2em;
+}
+
+.mobitel{
+    text-transform: uppercase;
+    list-style-image: url(../images/smartphone-call.png);
+    font-size: 1.2em;
+}
+
+.mail-adresa{
+    list-style-image: url(../images/at.png);
+    font-size: 1.2em;
+}
